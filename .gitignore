@@ -1,0 +1,40 @@
+# ---- Java / Maven / Gradle ----
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# ---- IntelliJ IDEA ----
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# ---- Eclipse (si alguien abre el proyecto ahí) ----
+.project
+.classpath
+.settings/
+
+# ---- VS Code ----
+.vscode/
+
+# ---- Logs ----
+*.log
+logs/
+*.out
+
+# ---- OS files ----
+.DS_Store
+Thumbs.db
+
+# ---- Kafka / data local ----
+# No subas tus carpetas locales de Kafka ni los metadatos del cluster
+kafka-logs/
+controller/
+data/
+
+# ---- Spring Boot specific ----
+# Archivos creados en runtime
+*.pid
