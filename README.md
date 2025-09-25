@@ -5,6 +5,7 @@
 
 ## Si es primera vez que se inicia:
 mkdir C:\kafka\data\kafka-logs
+
 mkdir C:\kafka\data\controller
 
 Generar un UUID y cópialo (salida en una sola línea)
