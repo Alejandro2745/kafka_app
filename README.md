@@ -4,18 +4,18 @@
 - (Opcional) Postman o curl para probar los endpoints (https://reqbin.com/)
 
 ## Si es primera vez que se inicia:
-mkdir C:\kafka\data\kafka-logs
+`mkdir C:\kafka\data\kafka-logs`
 
-mkdir C:\kafka\data\controller
+`mkdir C:\kafka\data\controller`
 
 Generar un UUID y cópialo (salida en una sola línea)
-bin\windows\kafka-storage.bat random-uuid
+`bin\windows\kafka-storage.bat random-uuid`
 
 Formatear el storage con ese UUID y el config KRaft
-bin\windows\kafka-storage.bat format -t <PEGA_AQUI_EL_UUID> -c config\server.properties
+`bin\windows\kafka-storage.bat format -t <PEGA_AQUI_EL_UUID> -c config\server.properties`
 
 Iniciar server
-bin\windows\kafka-server-start.bat config\server.properties
+`bin\windows\kafka-server-start.bat config\server.properties`
 
 
 ## 1) Levantar Kafka
@@ -33,6 +33,7 @@ bin\windows\kafka-server-start.bat config\server.properties
 ## 3) Probar el flujo SOAT
 - Enviar placa: `POST http://localhost:8068/api/soat/enviar?placa=ABC123`
 - Consultar resultado: `GET http://localhost:8068/api/soat/resultado?placa=ABC123`
+
 El GET obtenido debe ser algo asi:
 
 `{
