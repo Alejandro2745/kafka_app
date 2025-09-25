@@ -1,6 +1,6 @@
 ## Requisitos
 - Java 17+
-- Kafka instalado localmente (ej.: C:\kafka con Kafka 4.x KRaft 1 nodo)
+- Kafka instalado localmente (ej.: C:\kafka con Kafka 4.x)
 - (Opcional) Postman o curl para probar los endpoints
 
 ## Si es primera vez que se inicia:
